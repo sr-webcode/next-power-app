@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 html,
 body {
   padding: 0;
@@ -11,6 +19,47 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card-box {
+  background-color: slateblue;
+  color: #fff;
+  font-weight: bolder;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.card-box.red {
+  background-color: firebrick;
+}
+
+.card-box.gold {
+  background-color: goldenrod;
+}
+
+.navigation > ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navigation > ul > li {
+  padding: 10px;
+  color: rebeccapurple;
+  font-weight: bold;
+}
+
+#users {
+  list-style-type: none;
+}
+
+#users > li {
+  padding: 10px;
+}
+#users > li > a {
+  text-decoration: underline;
+  color: blue;
 }
